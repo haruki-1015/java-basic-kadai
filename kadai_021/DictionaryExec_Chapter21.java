@@ -2,17 +2,13 @@ package kadai_021;
 
 public class DictionaryExec_Chapter21 {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
+		Dictionary_Chapter21 dictionary = new Dictionary_Chapter21();
 
-        Dictionary_Chapter21 dictionary = new Dictionary_Chapter21();
+		dictionary.initWords();
 
-        String[] words = {
-                "apple",
-                "banana",
-                "grape",
-                "orange"
-        };
+		String words[] = { "apple", "banana", "grape", "orange" };
+		dictionary.searchWords(words);
+	}
 
-        dictionary.search(words);
-    }
 }
